@@ -69,5 +69,3 @@ batch_train_rmse, batch_test_rmse, batch_time = run_evaluation(batch_gradient_de
 stoch_train_rmse, stoch_test_rmse, stoch_time = run_evaluation(stochastic_gradient_descent, alpha, omega, iters * len(omega), num_users, num_movies, k)
 print(f"Batch Gradient Descent | Train RMSE: {batch_train_rmse:.3f} | Test RMSE: {batch_test_rmse:.3f} | Running Time: {batch_time:.2f}s")
 print(f"Stochastic Gradient Descent | Train RMSE: {stoch_train_rmse:.3f} | Test RMSE: {stoch_test_rmse:.3f} | Running Time: {stoch_time:.2f}s")
-
-
