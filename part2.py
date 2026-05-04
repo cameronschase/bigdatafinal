@@ -85,7 +85,8 @@ iters = 200
 
 #Experiment 1: Sweep k (alpha fixed at 0.01)
 print("Experiment 1: Sweep k")
-k_values = [2, 5, 10, 20, 50]
+#k_values = [2, 5, 10, 20, 50] #For SGD
+k_values = [10,50,100,250,500] #For BGD
 bgd_k = {'train': [], 'test': [], 'time': []}
 sgd_k = {'train': [], 'test': [], 'time': []}
 
@@ -99,7 +100,8 @@ for k in k_values:
 
 #Experiment 2: Sweep Alpha (k fixed at 10)
 print("\nExperiment 2: Sweep Alpha")
-alpha_values = [0.001, 0.005, 0.01, 0.05, 0.1]
+#alpha_values = [0.001, 0.005, 0.01, 0.05, 0.1] #For SGD
+alpha_values = [0.1,1,5,50,100] #For BGD
 bgd_a = {'train': [], 'test': [], 'time': []}
 sgd_a = {'train': [], 'test': [], 'time': []}
 
